@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.khs.panelview" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/khs"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DetailsActivity"/>
+        <activity
+            android:name=".Display_AC_Circuit_Protection1"
+            android:label="@string/title_activity_display_message"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection4"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_AC_Circuit_Protection_List1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_AC_Circuit_Protection_List1" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection5"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_AC_Circuit_Protection_List1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_AC_Circuit_Protection_List1" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection6"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_AC_Circuit_Protection_List2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_AC_Circuit_Protection_List2" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection7"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_AC_Circuit_Protection_List2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_AC_Circuit_Protection_List2" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection8"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="Display_AC_Circuit_Protection_List2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_AC_Circuit_Protection_List2" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection_List1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_AC_Circuit_Protection_List2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+        android:name=".Display_AC_Field_Wiring"
+        android:label="@string/title_activity_display_message"
+        android:parentActivityName=".DetailsActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.khs.panelview.DetailsActivity" />
+    </activity>
+        <activity
+            android:name=".Display_DC_Fuses"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_DC_Rail_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_DC_Rail_List" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_DC_Rail_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_DC_Rail_List" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_DC_Rail_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_DC_Rail_List" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail4"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_DC_Rail_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_DC_Rail_List" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail5"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_DC_Rail_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_DC_Rail_List" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail6"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_DC_Rail_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_DC_Rail_List" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail7"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_DC_Rail_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_DC_Rail_List" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail8"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_DC_Rail_List"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Distribution_Blocks"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Bottom1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Bottom2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Bottom_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Bottom_List" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Bottom3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Bottom_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Bottom_List" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Bottom4"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Bottom_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Bottom_List" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Bottom5"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Bottom_List"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Top_List1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Top_List1" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Top_List1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Top_List1" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top4"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Top_List2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Top_List2" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top5"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Top_List2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Top_List2" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top6"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Top_List3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Top_List3" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top7"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Top_List3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Top_List3" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top8"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Field_IO_Top_List3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Field_IO_Top_List3" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top_List1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top_List2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Field_IO_Top_List3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Heater_Circuit_Protection1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Heater_Circuit_Protection2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Heater_Contactors_Fuses1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Heater_Contactors_Fuses2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Heater_Contactors_Fuses3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Heater_Solid_State_Relays"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Motion_Control1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Motion_Control2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_PLC_Rack1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_PLC_Rack2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_PLC_Rack_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_PLC_Rack_List" />
+        </activity>
+        <activity
+            android:name=".Display_PLC_Rack3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_PLC_Rack_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_PLC_Rack_List" />
+        </activity>
+        <activity
+            android:name=".Display_PLC_Rack4"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_PLC_Rack_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_PLC_Rack_List" />
+        </activity>
+        <activity
+            android:name=".Display_PLC_Rack5"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_PLC_Rack_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_PLC_Rack_List" />
+        </activity>
+        <activity
+            android:name=".Display_PLC_Rack6"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_PLC_Rack_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_PLC_Rack_List" />
+        </activity>
+        <activity
+            android:name=".Display_PLC_Rack7"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+        android:name=".Display_PLC_Rack_List"
+        android:label="@string/title_activity_display_message"
+        android:parentActivityName=".DetailsActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.khs.panelview.DetailsActivity" />
+    </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Safety_Interlock_Communication_List1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Safety_Interlock_Communication_List1" />
+        </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Safety_Interlock_Communication_List1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Safety_Interlock_Communication_List1" />
+        </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication4"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication5"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Safety_Interlock_Communication_List2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Safety_Interlock_Communication_List2" />
+        </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication6"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Safety_Interlock_Communication_List2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Safety_Interlock_Communication_List2" />
+        </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication_List1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Safety_Interlock_Communication_List2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Servo_Drives1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Servo_Drives_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Servo_Drives_List" />
+        </activity>
+        <activity
+            android:name=".Display_Servo_Drives2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".Display_Servo_Drives_List" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.Display_Servo_Drives_List" />
+        </activity>
+        <activity
+            android:name=".Display_Servo_Drives3"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Servo_Drives4"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Servo_Drives_List"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Square_Relay1"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_Square_Relay2"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".Display_VFD"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".DetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.khs.panelview.DetailsActivity" />
+        </activity>
+    </application>
+
+</manifest>

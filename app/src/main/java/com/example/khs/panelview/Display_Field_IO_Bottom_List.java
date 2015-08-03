@@ -1,0 +1,28 @@
+package com.example.khs.panelview;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+
+/**
+ * Created by KHS on 7/22/2015.
+ */
+public class Display_Field_IO_Bottom_List extends ActionBarActivity {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.field_io_bottom_list);
+    }
+    public void send_field_io_bottom2(View view) {
+        Intent intent = new Intent(this, Display_Field_IO_Bottom2.class);
+        startActivity(intent);
+    }
+    public void send_field_io_bottom3(View view) {
+        Intent intent = new Intent(this, Display_Field_IO_Bottom3.class);
+        startActivity(intent);
+    }
+    public void send_field_io_bottom4(View view) {
+        Intent intent = new Intent(this, Display_Field_IO_Bottom4.class);
+        startActivity(intent);
+    }
+}

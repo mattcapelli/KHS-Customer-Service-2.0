@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/servo_drives"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00000c"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="260dp"
+        android:background="@drawable/button_border"
+        android:id="@+id/button62"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="53dp"
+        android:onClick="send_servo_drives_list"/>
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="260dp"
+        android:background="@drawable/button_border"
+        android:id="@+id/button63"
+        android:layout_alignTop="@+id/button62"
+        android:layout_toRightOf="@+id/button62"
+        android:layout_toEndOf="@+id/button62"
+        android:onClick="send_servo_drives3"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="260dp"
+        android:background="@drawable/button_border"
+        android:id="@+id/button64"
+        android:layout_alignTop="@+id/button63"
+        android:layout_toRightOf="@+id/button63"
+        android:layout_toEndOf="@+id/button63"
+        android:onClick="send_servo_drives4"/>
+</RelativeLayout>

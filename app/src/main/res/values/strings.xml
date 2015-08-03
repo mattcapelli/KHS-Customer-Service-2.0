@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Panel View</string>
+    <string-array name="image_ids">
+        <!--
+        Here you need to place the standardized jpg file titles
+        -->
+        <item>@drawable/ac_circuit_protection</item>
+        <item>@drawable/ac_field_wiring</item>
+        <item>@drawable/dc_fuses</item>
+        <item>@drawable/dc_rail</item>
+        <item>@drawable/distribution_blocks</item>
+        <item>@drawable/field_io_bottom</item>
+        <item>@drawable/field_io_top</item>
+        <item>@drawable/heater_circuit_protection</item>
+        <item>@drawable/heater_contactors_fuses</item>
+        <item>@drawable/heater_solid_state_relays</item>
+        <item>@drawable/motion_control</item>
+        <item>@drawable/plc_rack</item>
+        <item>@drawable/safety_interlock_communication</item>
+        <item>@drawable/servo_drives</item>
+        <item>@drawable/square_relay</item>
+        <item>@drawable/vfd</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_display_message">Panel Information</string>
+</resources>
